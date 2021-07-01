@@ -1,0 +1,23 @@
+First Reverse
+Have the function FirstReverse(str) take the str parameter being passed and return the string in reversed order. For example: if the input string is "Hello World and Coders" then your program should return the string sredoC dna dlroW olleH.
+Examples
+Input: "coderbyte"
+Output: etybredoc
+Input: "I Love Code"
+Output: edoC evoL I
+
+
+------------------------------------
+#include<stdio.h>
+include<string.h>
+void firstreverse(char str[]){
+int len,i;
+len=strlen(str);
+for(i=len-1;i>=0;i--){
+putchar(str[i]);
+}
+}
+int main (void){
+firstreverse(gets(stdin));
+return 0;
+}
